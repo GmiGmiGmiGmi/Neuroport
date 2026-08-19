@@ -60,6 +60,19 @@
         </button>
       </div>
 
+      <div class="intent-panel">
+        <div>
+          <div class="eyebrow">START HERE</div>
+          <h2>What are you trying to do?</h2>
+          <p>Choose the closest option. This keeps setup questions separate from troubleshooting.</p>
+        </div>
+        <div class="intent-buttons">
+          <button data-section="neuronode" type="button"><strong>Set something up</strong><span>Device setup, placement and accessories</span></button>
+          <button data-flow="nn-connect" type="button"><strong>Fix a problem</strong><span>Connection, lights, charging and access</span></button>
+          <button data-section="general" type="button"><strong>Learn how to use it</strong><span>Guides, manuals and product help</span></button>
+        </div>
+      </div>
+
       <div class="quick-panel">
         <div>
           <div class="eyebrow">COMMON QUICK FIXES</div>
@@ -69,8 +82,12 @@
           <button data-flow="nn-connect" type="button">NeuroNode won't connect</button>
           <button data-flow="nn-lights" type="button">What do the lights mean?</button>
           <button data-flow="grid-connect" type="button">Connect NeuroNode to Grid 3</button>
-          <button data-flow="nn-setup" type="button">NeuroNode Duo setup</button>
-          <button data-flow="strip-start" type="button">NeuroStrip help</button>
+          <button data-flow="nn-power" type="button">NeuroNode won't charge / no light</button>
+          <button data-flow="nn-activation" type="button">NeuroNode activation problem</button>
+          <button data-flow="nn-electrode-wizard" type="button">Which electrode should I use?</button>
+          <button data-flow="nn-placement-wizard" type="button">Where should I place NeuroNode?</button>
+          <button data-flow="strip-connect" type="button">NeuroStrip won't connect</button>
+          <button data-flow="strip-emg" type="button">NeuroStrip readings look wrong</button>
         </div>
       </div>
     </section>
@@ -139,10 +156,14 @@
         <div id="copyStatus" class="copy-status" aria-live="polite"></div>
       </div>
     </section>
+
+    <section class="safety-note" aria-label="Support scope">
+      <strong>Support scope:</strong> This V1 provides product-operation and approved troubleshooting guidance from Control Bionics materials. It does not replace clinical judgement, diagnosis, or individual clinical recommendations. Unclear or non-standard issues should be escalated to Support.
+    </section>
   </main>
 
   <footer>
-    <div>Control Bionics Support — V1 prototype</div>
+    <div>Control Bionics Support — V1.3 prototype</div>
     <div>Static website · No AI API · No usage fees</div>
   </footer>
 

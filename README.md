@@ -1,4 +1,4 @@
-# Control Bionics Support — V1
+# Control Bionics Support — V1.3
 
 A fully static, no-API frontline support prototype. It can be hosted for free on GitHub Pages.
 
@@ -24,7 +24,7 @@ This is not generative AI. It uses predefined approved support content and simpl
 1. Open `app.js`.
 2. Find:
 
-   `supportEmail: "REPLACE_WITH_SUPPORT_EMAIL"`
+   `supportEmail: "Support.au@controlbionics.com"`
 
 3. Replace it with the correct Control Bionics support mailbox.
 4. Review all troubleshooting wording internally before customer release.
@@ -56,3 +56,26 @@ No server or API is required for this V1.
 - `styles.css` — design / mobile layout
 - `app.js` — knowledge content, search and troubleshooting flows
 - `assets/` — visual reference images
+
+## NeuroStrip content added in V1.2
+The NeuroStrip Help Centre now includes approved content and visual references from the supplied NeuroStrip User Guide: product overview, EMG placement, patch alignment, Patient Manager, device connections, protocols, session creation, session graph controls, session export, connection troubleshooting, and erratic/inaccurate sEMG troubleshooting.
+
+
+## V1.2 additions
+- NeuroNode electrode and muscle placement visual guide
+- Electrode type selection: non-adhesive, adhesive and cloth
+- Adhesive electrode preparation
+- Cloth electrode preparation
+- NeuroNode band, bezel and non-adhesive electrode fitting
+- AU Support email preconfigured from the supplied Control Bionics placement guide
+
+
+## V1.3 additions
+- Start by intent: setup, troubleshooting, or learning
+- Expanded Common Quick Fixes
+- NeuroNode activation troubleshooting
+- Interactive electrode-selection wizard
+- Interactive placement-area wizard
+- Helpful / not-helpful feedback controls (local UI only; no database)
+- Clear product-support / clinical-scope boundary
+- Support escalation remains email-based and free
