@@ -1,0 +1,58 @@
+# Control Bionics Support — V1
+
+A fully static, no-API frontline support prototype. It can be hosted for free on GitHub Pages.
+
+## What is included
+
+- NeuroNode & AAC support
+- Grid 3 support
+- NeuroStrip help centre
+- General enquiries
+- Keyword-based search (runs locally in the browser)
+- Guided troubleshooting flows
+- Visual guides sourced from the supplied Trial Cards PDF
+- Resolution vs escalation logic
+- Human-support case summary generation
+- Responsive phone/tablet/desktop design
+
+## Important V1 limitation
+
+This is not generative AI. It uses predefined approved support content and simple keyword matching. That is why it can run without an AI API or usage cost.
+
+## Before publishing
+
+1. Open `app.js`.
+2. Find:
+
+   `supportEmail: "REPLACE_WITH_SUPPORT_EMAIL"`
+
+3. Replace it with the correct Control Bionics support mailbox.
+4. Review all troubleshooting wording internally before customer release.
+
+## Put it online free with GitHub Pages
+
+1. Sign in to GitHub and create a new public repository, e.g. `control-bionics-support-v1`.
+2. Upload **all files and the assets folder** from this project.
+3. Commit the files.
+4. Open **Settings → Pages**.
+5. Under **Build and deployment**, choose **Deploy from a branch**.
+6. Select branch **main** and folder **/(root)**.
+7. Save.
+8. GitHub will provide a public URL similar to:
+
+   `https://YOUR-USERNAME.github.io/control-bionics-support-v1/`
+
+No server or API is required for this V1.
+
+## How to add another knowledge item
+
+- Add a new issue card in `SECTIONS` inside `app.js`.
+- Add either a new `FLOW` for guided troubleshooting or an `ARTICLE` for informational content.
+- Put any approved image in `assets/` and reference its filename.
+
+## Files
+
+- `index.html` — page structure
+- `styles.css` — design / mobile layout
+- `app.js` — knowledge content, search and troubleshooting flows
+- `assets/` — visual reference images

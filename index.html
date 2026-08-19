@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Control Bionics Support</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">CB</div>
+      <div>
+        <div class="brand-title">Control Bionics Support</div>
+        <div class="brand-subtitle">Guided self-service support</div>
+      </div>
+    </div>
+    <button class="ghost-btn" id="homeBtn" type="button">Home</button>
+  </header>
+
+  <main class="shell">
+    <section id="homeView" class="view active">
+      <div class="hero">
+        <div class="eyebrow">FRONTLINE SUPPORT</div>
+        <h1>How can we help?</h1>
+        <p>Choose a support area or describe the issue. This version uses approved, predefined guidance only — no paid AI or API required.</p>
+        <div class="search-row">
+          <input id="globalSearch" type="search" placeholder="e.g. NeuroNode flashing blue, Grid 3 not detecting switch…" aria-label="Describe your issue" />
+          <button id="searchBtn" class="primary-btn" type="button">Find help</button>
+        </div>
+        <div id="searchResults" class="search-results" aria-live="polite"></div>
+      </div>
+
+      <div class="section-heading">
+        <h2>Choose a support area</h2>
+        <p>Start with the closest match. You can switch areas at any time.</p>
+      </div>
+
+      <div class="support-grid">
+        <button class="support-card neuro" data-section="neuronode" type="button">
+          <div class="card-icon">🧠</div>
+          <div><h3>NeuroNode & AAC</h3><p>Connection, charging, lights, placement, Controller App and AAC access.</p></div>
+          <span>Open →</span>
+        </button>
+        <button class="support-card grid" data-section="grid3" type="button">
+          <div class="card-icon">🖥️</div>
+          <div><h3>Grid 3 Support</h3><p>Switch connection, access settings and common NeuroNode integration checks.</p></div>
+          <span>Open →</span>
+        </button>
+        <button class="support-card strip" data-section="neurostrip" type="button">
+          <div class="card-icon">📈</div>
+          <div><h3>NeuroStrip</h3><p>Setup, sessions, protocols, data export, EMG concepts and troubleshooting.</p></div>
+          <span>Open →</span>
+        </button>
+        <button class="support-card general" data-section="general" type="button">
+          <div class="card-icon">◈</div>
+          <div><h3>General Enquiries</h3><p>Product guidance, manuals, trials, accessories and where to get further help.</p></div>
+          <span>Open →</span>
+        </button>
+      </div>
+
+      <div class="quick-panel">
+        <div>
+          <div class="eyebrow">COMMON QUICK FIXES</div>
+          <h2>Resolve the repetitive questions first</h2>
+        </div>
+        <div class="quick-chips">
+          <button data-flow="nn-connect" type="button">NeuroNode won't connect</button>
+          <button data-flow="nn-lights" type="button">What do the lights mean?</button>
+          <button data-flow="grid-connect" type="button">Connect NeuroNode to Grid 3</button>
+          <button data-flow="nn-setup" type="button">NeuroNode Duo setup</button>
+          <button data-flow="strip-start" type="button">NeuroStrip help</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="sectionView" class="view">
+      <button class="back-link" id="sectionBack" type="button">← Back</button>
+      <div class="section-hero">
+        <div id="sectionIcon" class="section-icon"></div>
+        <div>
+          <div class="eyebrow" id="sectionEyebrow">SUPPORT AREA</div>
+          <h1 id="sectionTitle"></h1>
+          <p id="sectionDescription"></p>
+        </div>
+      </div>
+      <div id="issueGrid" class="issue-grid"></div>
+    </section>
+
+    <section id="flowView" class="view">
+      <button class="back-link" id="flowBack" type="button">← Back</button>
+      <div class="flow-layout">
+        <div class="flow-main">
+          <div class="flow-header">
+            <div>
+              <div class="eyebrow" id="flowArea"></div>
+              <h1 id="flowTitle"></h1>
+              <p id="flowIntro"></p>
+            </div>
+            <button class="ghost-btn" id="restartFlow" type="button">Restart</button>
+          </div>
+          <div class="progress-wrap"><div id="progressBar" class="progress-bar"></div></div>
+          <div id="flowContent" class="flow-content"></div>
+          <div id="flowActions" class="flow-actions"></div>
+        </div>
+        <aside class="visual-panel">
+          <div class="visual-label">VISUAL GUIDE</div>
+          <div id="visualContent" class="visual-content"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="articleView" class="view">
+      <button class="back-link" id="articleBack" type="button">← Back</button>
+      <div class="article-shell">
+        <div>
+          <div class="eyebrow" id="articleArea"></div>
+          <h1 id="articleTitle"></h1>
+          <p id="articleSummary" class="article-summary"></p>
+          <div id="articleBody"></div>
+        </div>
+        <aside id="articleVisual" class="article-visual"></aside>
+      </div>
+    </section>
+
+    <section id="escalateView" class="view">
+      <button class="back-link" id="escalateBack" type="button">← Back</button>
+      <div class="escalate-card">
+        <div class="status-icon">↗</div>
+        <div class="eyebrow">HUMAN SUPPORT</div>
+        <h1>This needs a closer look</h1>
+        <p>The standard frontline steps did not resolve the issue. The summary below is ready to pass to Support so the customer does not need to repeat the basic troubleshooting.</p>
+        <div id="caseSummary" class="case-summary"></div>
+        <div class="escalate-actions">
+          <button id="copySummary" class="secondary-btn" type="button">Copy summary</button>
+          <button id="emailSupport" class="primary-btn" type="button">Email Support</button>
+        </div>
+        <div id="copyStatus" class="copy-status" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Control Bionics Support — V1 prototype</div>
+    <div>Static website · No AI API · No usage fees</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
