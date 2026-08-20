@@ -1,216 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Control Bionics interactive support hub for NeuroNode, Grid 3, Eye-Gaze, NeuroStrip and AAC products." />
-  <title>Control Bionics Support Hub</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Control Bionics Support</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="#home" aria-label="Control Bionics Support Hub">
-    <img src="assets/control-bionics-logo.png" alt="Control Bionics" />
-  </a>
-  <nav class="nav" aria-label="Primary navigation">
-    <a class="active" href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#quick-fixes">Quick Fixes</a>
-    <a href="#guides">Guides</a>
-    <a href="#useful-links">Useful Links</a>
-  </nav>
-  <div class="top-actions">
-    <label class="search-wrap">
-      <span class="sr-only">Search support</span>
-      <input id="searchInput" type="search" placeholder="Search for help…" autocomplete="off" />
-      <button id="searchBtn" type="button" aria-label="Search">⌕</button>
-    </label>
-    <a class="btn btn-primary" target="_blank" rel="noopener"
-       href="https://bookings.cloud.microsoft/book/ControlBionics@controlbionics.com/?ismsaljsauthenabled=true">Book Support</a>
-  </div>
-</header>
-
-<main id="home">
-  <section class="hero">
-    <div class="hero-copy">
-      <span class="eyebrow">CONTROL BIONICS SUPPORT</span>
-      <h1>Hi, how can we help today?</h1>
-      <p>Find answers, follow step-by-step guides, or get in touch with our team.</p>
-
-      <div class="intent-row">
-        <button class="intent-card" data-open="fix-problem">
-          <span class="intent-icon">🔧</span>
-          <span><strong>Fix a problem</strong><small>Troubleshoot an issue</small></span>
-        </button>
-        <button class="intent-card" data-open="setup">
-          <span class="intent-icon">⚙️</span>
-          <span><strong>Set something up</strong><small>Install or configure</small></span>
-        </button>
-        <button class="intent-card" data-open="learn">
-          <span class="intent-icon">📖</span>
-          <span><strong>Learn how to use</strong><small>Guides & how-tos</small></span>
-        </button>
+  <header class="topbar">
+    <div class="brand">
+      <img class="company-logo" src="assets/control-bionics-logo.png" alt="Control Bionics" />
+      <div class="brand-copy">
+        <div class="brand-title">Support</div>
+        <div class="brand-subtitle">Guided self-service support</div>
       </div>
     </div>
+    <button class="ghost-btn" id="homeBtn" type="button">Home</button>
+  </header>
 
-    <div class="hero-products" aria-label="Control Bionics products">
-      <img class="hero-oskol" src="assets/oskol2.png" alt="Oskol 2 AAC device" />
-      <img class="hero-main" src="assets/neuronode-trilogy.png" alt="NeuroNode Trilogy AAC device" />
-      <img class="hero-side" src="assets/eyegaze-duo.png" alt="EyeGaze Duo AAC device" />
-      <img class="hero-node" src="assets/neuronode-closeup.png" alt="NeuroNode wearable sensor" />
-      <img class="hero-strip" src="assets/neurostrip-sensor.jpg" alt="NeuroStrip sensor" />
-    </div>
-  </section>
-
-  <section id="products" class="section">
-    <div class="section-heading">
-      <div>
-        <span class="eyebrow">PRODUCT SUPPORT</span>
-        <h2>Choose your product</h2>
+  <main class="shell">
+    <section id="homeView" class="view active">
+      <div class="hero">
+        <div class="eyebrow">FRONTLINE SUPPORT</div>
+        <h1>How can we help?</h1>
+        <p>Choose a support area or describe the issue. This version uses approved, predefined guidance only — no paid AI or API required.</p>
+        <div class="search-row">
+          <input id="globalSearch" type="search" placeholder="e.g. NeuroNode flashing blue, Grid 3 not detecting switch…" aria-label="Describe your issue" />
+          <button id="searchBtn" class="primary-btn" type="button">Find help</button>
+        </div>
+        <div id="searchResults" class="search-results" aria-live="polite"></div>
       </div>
-      <p>Select a product to see setup, troubleshooting and official resources.</p>
-    </div>
 
-    <div class="product-grid">
-      <article class="product-card">
-        <div class="product-img-wrap"><img src="assets/neuronode-duo.png" alt="NeuroNode Duo" /></div>
-        <div class="product-body">
-          <span class="tag">AAC + EMG ACCESS</span>
-          <h3>NeuroNode Duo</h3>
-          <p>Connection, charging, activation, placement and Grid 3 support.</p>
-          <button class="text-link" data-open="neuronode">Get help →</button>
+      <div class="section-heading">
+        <h2>Choose a support area</h2>
+        <p>Start with the closest match. You can switch areas at any time.</p>
+      </div>
+
+      <div class="product-showcase">
+        <button class="product-card" data-section="neuronode" type="button"><img src="assets/neuronode-duo.png" alt="NeuroNode Duo" /><strong>NeuroNode Duo</strong><span>NeuroNode & AAC support</span></button>
+        <button class="product-card" data-section="neuronode" type="button"><img src="assets/neuronode-trilogy.png" alt="NeuroNode Trilogy" /><strong>NeuroNode Trilogy</strong><span>NeuroNode, eye gaze & AAC</span></button>
+        <button class="product-card" data-section="neuronode" type="button"><img src="assets/eyegaze-duo.png" alt="EyeGaze Duo" /><strong>EyeGaze Duo</strong><span>Eye-gaze device support</span></button>
+        <button class="product-card" data-section="neuronode" type="button"><img src="assets/uno-touch.png" alt="UNO Touch" /><strong>UNO Touch</strong><span>AAC setup & support</span></button>
+        <button class="product-card" data-section="neurostrip" type="button"><img src="assets/neurostrip.png" alt="NeuroStrip" /><strong>NeuroStrip</strong><span>EMG setup & troubleshooting</span></button>
+        <button class="product-card" data-section="general" type="button"><img src="assets/oskol2.png" alt="Oskol 2 iOS eye-gaze device" /><strong>Oskol 2</strong><span>iOS eye-gaze information</span></button>
+      </div>
+
+      <div class="support-grid">
+        <button class="support-card neuro" data-section="neuronode" type="button">
+          <div class="card-icon">🧠</div>
+          <div><h3>NeuroNode & AAC</h3><p>Connection, charging, lights, placement, Controller App and AAC access.</p></div>
+          <span>Open →</span>
+        </button>
+        <button class="support-card grid" data-section="grid3" type="button">
+          <div class="card-icon">🖥️</div>
+          <div><h3>Grid 3 Support</h3><p>Switch connection, access settings and common NeuroNode integration checks.</p></div>
+          <span>Open →</span>
+        </button>
+        <button class="support-card strip" data-section="neurostrip" type="button">
+          <div class="card-icon">📈</div>
+          <div><h3>NeuroStrip</h3><p>Setup, sessions, protocols, data export, EMG concepts and troubleshooting.</p></div>
+          <span>Open →</span>
+        </button>
+        <button class="support-card general" data-section="general" type="button">
+          <div class="card-icon">◈</div>
+          <div><h3>General Enquiries</h3><p>Product guidance, manuals, trials, accessories and where to get further help.</p></div>
+          <span>Open →</span>
+        </button>
+      </div>
+
+      <div class="intent-panel">
+        <div>
+          <div class="eyebrow">START HERE</div>
+          <h2>What are you trying to do?</h2>
+          <p>Choose the closest option. This keeps setup questions separate from troubleshooting.</p>
         </div>
-      </article>
-
-      <article class="product-card">
-        <div class="product-img-wrap"><img src="assets/neuronode-trilogy.png" alt="NeuroNode Trilogy" /></div>
-        <div class="product-body">
-          <span class="tag">AAC + EYE GAZE + EMG</span>
-          <h3>NeuroNode Trilogy</h3>
-          <p>Combined NeuroNode, eye-gaze and AAC troubleshooting.</p>
-          <button class="text-link" data-open="trilogy">Get help →</button>
+        <div class="intent-buttons">
+          <button data-section="neuronode" type="button"><strong>Set something up</strong><span>Device setup, placement and accessories</span></button>
+          <button data-flow="nn-connect" type="button"><strong>Fix a problem</strong><span>Connection, lights, charging and access</span></button>
+          <button data-section="general" type="button"><strong>Learn how to use it</strong><span>Guides, manuals and product help</span></button>
         </div>
-      </article>
+      </div>
 
-      <article class="product-card">
-        <div class="product-img-wrap"><img src="assets/eyegaze-duo.png" alt="EyeGaze Duo" /></div>
-        <div class="product-body">
-          <span class="tag">EYE-GAZE ACCESS</span>
-          <h3>Eye-Gaze Solutions</h3>
-          <p>Hiru and Alea/IntelliGaze setup, positioning and official resources.</p>
-          <button class="text-link" data-open="eyegaze">Get help →</button>
+      <div class="quick-panel">
+        <div>
+          <div class="eyebrow">COMMON QUICK FIXES</div>
+          <h2>Resolve the repetitive questions first</h2>
         </div>
-      </article>
-
-      <article class="product-card">
-        <div class="product-img-wrap"><img src="assets/uno-touch.png" alt="UNO Touch" /></div>
-        <div class="product-body">
-          <span class="tag">TOUCH AAC</span>
-          <h3>UNO Touch</h3>
-          <p>Power, Bluetooth speaker, AAC software and basic setup guidance.</p>
-          <button class="text-link" data-open="uno">Get help →</button>
+        <div class="quick-chips">
+          <button data-flow="nn-connect" type="button">NeuroNode won't connect</button>
+          <button data-flow="nn-lights" type="button">What do the lights mean?</button>
+          <button data-flow="grid-connect" type="button">Connect NeuroNode to Grid 3</button>
+          <button data-flow="nn-power" type="button">NeuroNode won't charge / no light</button>
+          <button data-flow="nn-activation" type="button">NeuroNode activation problem</button>
+          <button data-flow="nn-electrode-wizard" type="button">Which electrode should I use?</button>
+          <button data-flow="nn-placement-wizard" type="button">Where should I place NeuroNode?</button>
+          <button data-flow="strip-connect" type="button">NeuroStrip won't connect</button>
+          <button data-flow="strip-emg" type="button">NeuroStrip readings look wrong</button>
         </div>
-      </article>
+      </div>
 
-      <article class="product-card">
-        <div class="product-img-wrap contain"><img src="assets/neurostrip-sensor.jpg" alt="NeuroStrip sensor" /></div>
-        <div class="product-body">
-          <span class="tag">sEMG + MOVEMENT</span>
-          <h3>NeuroStrip</h3>
-          <p>Connections, protocols, sessions, placement, graphs and troubleshooting.</p>
-          <button class="text-link" data-open="neurostrip">Get help →</button>
+      <div class="resource-panel">
+        <div>
+          <div class="eyebrow">USEFUL LINKS</div>
+          <h2>Official product & support resources</h2>
+          <p>Open trusted external resources, product information or book a session with Control Bionics.</p>
         </div>
-      </article>
-
-      <article class="product-card general-card">
-        <div class="general-icon">💬</div>
-        <div class="product-body">
-          <span class="tag">GENERAL SUPPORT</span>
-          <h3>General Enquiries</h3>
-          <p>Product information, trials, bookings, mounts, manuals and contact options.</p>
-          <button class="text-link" data-open="general">Get help →</button>
+        <div class="resource-grid">
+          <a class="resource-link" href="https://controlbionics.com/" target="_blank" rel="noopener"><strong>Control Bionics</strong><span>Official website ↗</span></a>
+          <a class="resource-link" href="https://bookings.cloud.microsoft/book/ControlBionics@controlbionics.com/?ismsaljsauthenabled=true" target="_blank" rel="noopener"><strong>Book with Control Bionics</strong><span>Product Specialist / Customer Support ↗</span></a>
+          <a class="resource-link" href="https://www.instagram.com/controlbionicsaus/" target="_blank" rel="noopener"><strong>Control Bionics Australia</strong><span>Instagram ↗</span></a>
+          <a class="resource-link" href="https://www.irisbond.com/en/" target="_blank" rel="noopener"><strong>IRISBOND Hiru</strong><span>Eye-gaze information ↗</span></a>
+          <a class="resource-link" href="https://www.intelligaze.com/en/home" target="_blank" rel="noopener"><strong>Alea IntelliGaze</strong><span>Eye-gaze information ↗</span></a>
+          <a class="resource-link" href="https://hub.thinksmartbox.com/topic/grid-3/" target="_blank" rel="noopener"><strong>Grid 3 for Windows</strong><span>Smartbox support hub ↗</span></a>
+          <a class="resource-link" href="https://hub.thinksmartbox.com/topic/grid-for-ipad/" target="_blank" rel="noopener"><strong>Grid for iPad</strong><span>Smartbox support hub ↗</span></a>
+          <a class="resource-link" href="https://rehadapt.com/" target="_blank" rel="noopener"><strong>Rehadapt Mounts</strong><span>Table, floor & wheelchair mounting ↗</span></a>
         </div>
-      </article>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <section id="quick-fixes" class="section muted-section">
-    <div class="section-heading compact">
-      <div><span class="eyebrow">POPULAR SOLUTIONS</span><h2>Quick fixes</h2></div>
-      <button class="text-link" data-open="all-fixes">View all quick fixes →</button>
-    </div>
-    <div class="quick-grid">
-      <button class="quick-card" data-open="nn-connect"><span class="quick-icon blue">⌁</span><span><strong>NeuroNode won’t connect</strong><small>Bluetooth reset / reconnection</small></span></button>
-      <button class="quick-card" data-open="nn-charge"><span class="quick-icon amber">⚡</span><span><strong>NeuroNode won’t charge</strong><small>Check charging basics</small></span></button>
-      <button class="quick-card" data-open="nn-red"><span class="quick-icon red">!</span><span><strong>NeuroNode flashing red</strong><small>Error state and next steps</small></span></button>
-      <button class="quick-card" data-open="grid3"><span class="quick-icon purple">⚙</span><span><strong>Grid 3 not responding</strong><small>Check switch connection</small></span></button>
-      <button class="quick-card" data-open="ns-signal"><span class="quick-icon green">▥</span><span><strong>NeuroStrip bad / no EMG</strong><small>Improve signal quality</small></span></button>
-      <button class="quick-card" data-open="eyegaze-position"><span class="quick-icon cyan">◉</span><span><strong>Eye-Gaze camera issues</strong><small>Positioning and cable checks</small></span></button>
-    </div>
-  </section>
+    <section id="sectionView" class="view">
+      <button class="back-link" id="sectionBack" type="button">← Back</button>
+      <div class="section-hero">
+        <div id="sectionIcon" class="section-icon"></div>
+        <div>
+          <div class="eyebrow" id="sectionEyebrow">SUPPORT AREA</div>
+          <h1 id="sectionTitle"></h1>
+          <p id="sectionDescription"></p>
+        </div>
+      </div>
+      <div id="issueGrid" class="issue-grid"></div>
+    </section>
 
-  <section id="guides" class="section">
-    <div class="section-heading">
-      <div><span class="eyebrow">STEP-BY-STEP</span><h2>Guided support</h2></div>
-      <p>Short, visual flows for common setup and troubleshooting tasks.</p>
-    </div>
-    <div class="guide-grid">
-      <button class="guide-card" data-open="electrode-wizard"><span>01</span><h3>Choose an electrode</h3><p>Find the appropriate NeuroNode electrode option for the intended placement.</p></button>
-      <button class="guide-card" data-open="placement"><span>02</span><h3>NeuroNode placement</h3><p>Examples for face, shoulder, hand, wrist and lower-limb activation.</p></button>
-      <button class="guide-card" data-open="ns-patch"><span>03</span><h3>NeuroStrip patch alignment</h3><p>Follow the patch alignment workflow before applying the NeuroStrip.</p></button>
-      <button class="guide-card" data-open="ns-session"><span>04</span><h3>Start a NeuroStrip session</h3><p>Connect devices, assign channels and select a protocol.</p></button>
-      <button class="guide-card" data-open="grid3"><span>05</span><h3>Connect NeuroNode to Grid 3</h3><p>Check Grid 3 switch connection and Change Key setup.</p></button>
-      <button class="guide-card" data-open="mounts"><span>06</span><h3>Mounting options</h3><p>Table stands, floor stands and wheelchair mount resources.</p></button>
-    </div>
-  </section>
+    <section id="flowView" class="view">
+      <button class="back-link" id="flowBack" type="button">← Back</button>
+      <div class="flow-layout">
+        <div class="flow-main">
+          <div class="flow-header">
+            <div>
+              <div class="eyebrow" id="flowArea"></div>
+              <h1 id="flowTitle"></h1>
+              <p id="flowIntro"></p>
+            </div>
+            <button class="ghost-btn" id="restartFlow" type="button">Restart</button>
+          </div>
+          <div class="progress-wrap"><div id="progressBar" class="progress-bar"></div></div>
+          <div id="flowContent" class="flow-content"></div>
+          <div id="flowActions" class="flow-actions"></div>
+        </div>
+        <aside class="visual-panel">
+          <div class="visual-label">VISUAL GUIDE</div>
+          <div id="visualContent" class="visual-content"></div>
+        </aside>
+      </div>
+    </section>
 
-  <section id="useful-links" class="section muted-section">
-    <div class="section-heading">
-      <div><span class="eyebrow">OFFICIAL RESOURCES</span><h2>Useful links</h2></div>
-      <p>External links open official manufacturer and product-support resources.</p>
-    </div>
-    <div class="links-grid">
-      <a class="resource-card" target="_blank" rel="noopener" href="https://controlbionics.com/"><strong>Control Bionics</strong><span>Official company website →</span></a>
-      <a class="resource-card" target="_blank" rel="noopener" href="https://www.instagram.com/controlbionicsaus/"><strong>Control Bionics Australia</strong><span>Instagram →</span></a>
-      <a class="resource-card" target="_blank" rel="noopener" href="https://bookings.cloud.microsoft/book/ControlBionics@controlbionics.com/?ismsaljsauthenabled=true"><strong>Book Support</strong><span>Product Specialist / Customer Support →</span></a>
-      <a class="resource-card" target="_blank" rel="noopener" href="https://www.irisbond.com/en/"><strong>IRISBOND Hiru</strong><span>Eye-gaze information →</span></a>
-      <a class="resource-card" target="_blank" rel="noopener" href="https://www.intelligaze.com/en/home"><strong>Alea IntelliGaze</strong><span>Eye-gaze information →</span></a>
-      <a class="resource-card" target="_blank" rel="noopener" href="https://hub.thinksmartbox.com/topic/grid-3/"><strong>Grid 3 for Windows</strong><span>Smartbox support →</span></a>
-      <a class="resource-card" target="_blank" rel="noopener" href="https://hub.thinksmartbox.com/topic/how-to-use-grid-3/"><strong>How to use Grid 3</strong><span>Smartbox guides →</span></a>
-      <a class="resource-card" target="_blank" rel="noopener" href="https://hub.thinksmartbox.com/topic/grid-for-ipad/"><strong>Grid for iPad</strong><span>Smartbox support →</span></a>
-      <a class="resource-card" target="_blank" rel="noopener" href="https://hub.thinksmartbox.com/topic/product-information/"><strong>Smartbox Product Information</strong><span>Official resources →</span></a>
-      <a class="resource-card" target="_blank" rel="noopener" href="https://rehadapt.com/"><strong>Rehadapt Mounting</strong><span>Table, floor & wheelchair mounts →</span></a>
-    </div>
-  </section>
+    <section id="articleView" class="view">
+      <button class="back-link" id="articleBack" type="button">← Back</button>
+      <div class="article-shell">
+        <div>
+          <div class="eyebrow" id="articleArea"></div>
+          <h1 id="articleTitle"></h1>
+          <p id="articleSummary" class="article-summary"></p>
+          <div id="articleBody"></div>
+        </div>
+        <aside id="articleVisual" class="article-visual"></aside>
+      </div>
+    </section>
 
-  <section class="section support-banner">
-    <div>
-      <span class="eyebrow">NEED MORE HELP?</span>
-      <h2>Talk to our Support team</h2>
-      <p>If standard troubleshooting does not resolve your issue, contact Control Bionics Support or book a session.</p>
-    </div>
-    <div class="support-actions">
-      <a class="btn btn-primary" target="_blank" rel="noopener"
-         href="https://bookings.cloud.microsoft/book/ControlBionics@controlbionics.com/?ismsaljsauthenabled=true">Book an appointment</a>
-      <a class="btn btn-secondary" href="mailto:Support.au@controlbionics.com">Email Support</a>
-    </div>
-  </section>
-</main>
+    <section id="escalateView" class="view">
+      <button class="back-link" id="escalateBack" type="button">← Back</button>
+      <div class="escalate-card">
+        <div class="status-icon">↗</div>
+        <div class="eyebrow">HUMAN SUPPORT</div>
+        <h1>This needs a closer look</h1>
+        <p>The standard frontline steps did not resolve the issue. The summary below is ready to pass to Support so the customer does not need to repeat the basic troubleshooting.</p>
+        <div id="caseSummary" class="case-summary"></div>
+        <div class="escalate-actions">
+          <button id="copySummary" class="secondary-btn" type="button">Copy summary</button>
+          <button id="emailSupport" class="primary-btn" type="button">Email Support</button>
+        </div>
+        <div id="copyStatus" class="copy-status" aria-live="polite"></div>
+      </div>
+    </section>
 
-<footer>
-  <div><strong>Control Bionics Support Hub</strong><small>Interactive self-service support prototype</small></div>
-  <div><strong>1300 971 744</strong><small>Support.au@controlbionics.com</small></div>
-  <div><strong>Human support when needed</strong><small>Common fixes first. Escalate unresolved issues.</small></div>
-</footer>
+    <section class="safety-note" aria-label="Support scope">
+      <strong>Support scope:</strong> This V1 provides product-operation and approved troubleshooting guidance from Control Bionics materials. It does not replace clinical judgement, diagnosis, or individual clinical recommendations. Unclear or non-standard issues should be escalated to Support.
+    </section>
+  </main>
 
-<div id="modal" class="modal" aria-hidden="true">
-  <div class="modal-backdrop" data-close></div>
-  <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <button class="modal-close" type="button" aria-label="Close" data-close>×</button>
-    <div id="modalContent"></div>
-  </section>
-</div>
+  <footer>
+    <div>Control Bionics Support — V1.5 prototype</div>
+    <div>Static website · No AI API · No usage fees</div>
+  </footer>
 
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
