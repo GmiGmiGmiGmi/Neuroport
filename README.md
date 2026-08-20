@@ -1,4 +1,4 @@
-# Control Bionics Support — V1.3
+# Control Bionics Support — V1.4
 
 A fully static, no-API frontline support prototype. It can be hosted for free on GitHub Pages.
 
@@ -70,7 +70,7 @@ The NeuroStrip Help Centre now includes approved content and visual references f
 - AU Support email preconfigured from the supplied Control Bionics placement guide
 
 
-## V1.3 additions
+## V1.4 additions
 - Start by intent: setup, troubleshooting, or learning
 - Expanded Common Quick Fixes
 - NeuroNode activation troubleshooting
@@ -79,3 +79,7 @@ The NeuroStrip Help Centre now includes approved content and visual references f
 - Helpful / not-helpful feedback controls (local UI only; no database)
 - Clear product-support / clinical-scope boundary
 - Support escalation remains email-based and free
+
+
+## V1.4 external resources
+This build adds official outbound links for Control Bionics, Control Bionics Australia Instagram, Microsoft Bookings, IRISBOND Hiru, Alea IntelliGaze, Smartbox Grid 3 / Grid for iPad, Smartbox product information, and Rehadapt mounting systems. External links open in a new tab.

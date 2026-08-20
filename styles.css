@@ -18,3 +18,16 @@
 .choice-note{font-size:13px;color:var(--muted);margin-top:8px}.route-banner{margin:14px 0;padding:12px 14px;border-left:4px solid var(--accent);background:var(--panel);border-radius:10px}
 @media(max-width:760px){.intent-buttons{grid-template-columns:1fr}.quick-chips{display:grid;grid-template-columns:1fr 1fr}.quick-chips button{width:100%}}
 @media(max-width:480px){.quick-chips{grid-template-columns:1fr}}
+
+
+/* V1.4 official resource links */
+.resource-panel{margin-top:28px;padding:26px;border:1px solid var(--border,#dfe3e8);border-radius:24px;background:#fff}
+.resource-panel h2{margin:.25rem 0 .4rem}.resource-panel p{margin:0;color:#667085}
+.resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}
+.resource-link,.article-link{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:inherit;border:1px solid #dfe3e8;border-radius:16px;padding:14px 16px;background:#fff;transition:.15s ease}
+.resource-link:hover,.article-link:hover{border-color:#f28c28;transform:translateY(-1px)}
+.resource-link span{font-size:.9rem;color:#667085}.article-link{display:inline-flex;margin:5px 6px 5px 0;color:#17212b}.link-list{display:flex;flex-direction:column;align-items:stretch}.link-list .article-link{display:flex}
+@media(max-width:680px){.resource-grid{grid-template-columns:1fr}}
+
+/* V1.5 product imagery */
+.company-logo{width:170px;max-height:58px;object-fit:contain;object-position:left center;display:block}.brand-copy{border-left:1px solid #e2e8f0;padding-left:14px}.product-showcase{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin:0 0 28px}.product-card{appearance:none;border:1px solid #e3e8ef;background:#fff;border-radius:18px;padding:14px;text-align:left;cursor:pointer;box-shadow:0 7px 24px rgba(15,23,42,.055);transition:.18s ease;min-width:0}.product-card:hover{transform:translateY(-2px);border-color:#9fc7ef;box-shadow:0 10px 28px rgba(15,23,42,.09)}.product-card img{width:100%;height:135px;object-fit:contain;border-radius:12px;background:#fff;margin-bottom:10px}.product-card strong{display:block;font-size:15px;color:#172033}.product-card span{display:block;margin-top:4px;color:#687386;font-size:12px;line-height:1.35}@media(max-width:1100px){.product-showcase{grid-template-columns:repeat(3,1fr)}}@media(max-width:650px){.company-logo{width:135px}.brand-copy{display:none}.product-showcase{grid-template-columns:repeat(2,1fr)}.product-card img{height:110px}}
