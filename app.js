@@ -37,7 +37,7 @@ const content = {
   },
   "neuronode": {
     title:"NeuroNode & AAC support",
-    body:`<img class="panel-image" src="assets/neuronode-duo.png" alt="NeuroNode Duo">
+    body:`<img class="panel-image" src="./assets/neuronode-duo.png" alt="NeuroNode Duo">
       <p>Use this section for NeuroNode connection, charging, activation, electrode selection, placement and Grid 3 access.</p>
       <div class="choice-grid">
         <button class="choice" data-jump="nn-connect">Connection problem</button>
@@ -50,7 +50,7 @@ const content = {
   },
   "trilogy": {
     title:"NeuroNode Trilogy",
-    body:`<img class="panel-image" src="assets/neuronode-trilogy.png" alt="NeuroNode Trilogy">
+    body:`<img class="panel-image" src="./assets/neuronode-trilogy.png" alt="NeuroNode Trilogy">
       <p>The Trilogy combines AAC, NeuroNode access and eye-gaze capability. Start by identifying which part of the system is causing the issue.</p>
       <div class="choice-grid">
         <button class="choice" data-jump="nn-connect">NeuroNode connection</button>
@@ -61,7 +61,7 @@ const content = {
   },
   "eyegaze": {
     title:"Eye-Gaze solutions",
-    body:`<img class="panel-image" src="assets/eyegaze-duo.png" alt="EyeGaze Duo">
+    body:`<img class="panel-image" src="./assets/eyegaze-duo.png" alt="EyeGaze Duo">
       <p>Support resources for IRISBOND Hiru and Alea / IntelliGaze eye-gaze systems.</p>
       <div class="choice-grid">
         <button class="choice" data-jump="eyegaze-position">Positioning / cable checks</button>
@@ -74,7 +74,7 @@ const content = {
   },
   "eyegaze-position": {
     title:"Eye-Gaze positioning & basic checks",
-    body:`<img class="panel-image" src="assets/eyegaze-duo.png" alt="EyeGaze Duo">
+    body:`<img class="panel-image" src="./assets/eyegaze-duo.png" alt="EyeGaze Duo">
       <ol>
         <li>Check that all Eye-Gaze cables are securely connected to the camera and device.</li>
         <li>Position the top of the screen approximately level with the user's eyes.</li>
@@ -85,7 +85,7 @@ const content = {
   },
   "uno": {
     title:"UNO Touch",
-    body:`<img class="panel-image" src="assets/uno-touch.png" alt="UNO Touch">
+    body:`<img class="panel-image" src="./assets/uno-touch.png" alt="UNO Touch">
       <ol>
         <li>Press and hold the device power button until the screen lights up.</li>
         <li>On Windows, confirm Grid 3 opens. On iOS, open the selected AAC application.</li>
@@ -96,7 +96,7 @@ const content = {
   "neurostrip": {
     title:"NeuroStrip Support Centre",
     body:`<div class="ns-hero-panel">
-        <img class="panel-image" src="assets/neurostrip-sensor.jpg" alt="NeuroStrip sensor">
+        <img class="panel-image" src="./assets/neurostrip-sensor.jpg" alt="NeuroStrip sensor">
         <div>
           <span class="panel-kicker">COMPLETE PRODUCT SUPPORT</span>
           <p><strong>NeuroStrip</strong> records surface electromyography (sEMG) and device movement data. The application supports multiple connected devices, protocols, live sessions, review and analysis.</p>
@@ -143,11 +143,11 @@ const content = {
 
       <h3 class="panel-section-title">Reference materials</h3>
       <div class="resource-downloads">
-        <a href="assets/neurostrip-user-guide.pdf" target="_blank">NeuroStrip User Guide ↗</a>
-        <a href="assets/neurostrip-guide.pdf" target="_blank">NeuroStrip Product / Quick Guides ↗</a>
-        <a href="assets/neurostrip-skin-prep.pdf" target="_blank">Skin Preparation Guide ↗</a>
-        <a href="assets/neurostrip-dysphagia.pdf" target="_blank">Dysphagia 2-Pager ↗</a>
-        <a href="assets/neurostrip-guide-video.mp4" target="_blank">NeuroStrip Guide Video ▶</a>
+        <a href="./assets/neurostrip-user-guide.pdf" target="_blank">NeuroStrip User Guide ↗</a>
+        <a href="./assets/neurostrip-guide.pdf" target="_blank">NeuroStrip Product / Quick Guides ↗</a>
+        <a href="./assets/neurostrip-skin-prep.pdf" target="_blank">Skin Preparation Guide ↗</a>
+        <a href="./assets/neurostrip-dysphagia.pdf" target="_blank">Dysphagia 2-Pager ↗</a>
+        <a href="./assets/neurostrip-guide-video.mp4" target="_blank">NeuroStrip Guide Video ▶</a>
       </div>
 
       <div class="callout warning"><strong>Support scope:</strong> operational guidance only. Clinical interpretation, diagnosis and treatment decisions remain with appropriately qualified professionals.</div>`
@@ -155,7 +155,7 @@ const content = {
 
   "ns-rehab": {
     title:"NeuroStrip — Rehabilitation pathway",
-    body:`<img class="panel-guide-image" src="assets/ns-guide-patient-overview.png" alt="NeuroStrip patient overview and muscle metrics">
+    body:`<img class="panel-guide-image" src="./assets/ns-guide-patient-overview.png" alt="NeuroStrip patient overview and muscle metrics">
       <p>This pathway groups the same NeuroStrip setup and app tools around a rehabilitation workflow.</p>
       <div class="choice-grid ns-choice-grid">
         <button class="choice" data-jump="ns-skinprep">Prepare the skin</button>
@@ -172,7 +172,7 @@ const content = {
 
   "ns-sport": {
     title:"NeuroStrip — Sports & Performance pathway",
-    body:`<img class="panel-guide-image" src="assets/ns-guide-measurements.png" alt="NeuroStrip measurements and performance trend screen">
+    body:`<img class="panel-guide-image" src="./assets/ns-guide-measurements.png" alt="NeuroStrip measurements and performance trend screen">
       <p>This pathway groups NeuroStrip tools for sport science, strength and conditioning, performance testing and repeated measurement workflows.</p>
       <div class="choice-grid ns-choice-grid">
         <button class="choice" data-jump="ns-placement">Choose muscle placement</button>
@@ -189,7 +189,7 @@ const content = {
 
   "ns-quickstart": {
     title:"NeuroStrip — Quick start & charging",
-    body:`<img class="panel-guide-image" src="assets/ns-guide-overview.png" alt="NeuroStrip hardware and application overview"><div class="step-stack">
+    body:`<img class="panel-guide-image" src="./assets/ns-guide-overview.png" alt="NeuroStrip hardware and application overview"><div class="step-stack">
       <div class="step-card"><b>1</b><div><h4>Charge before the session</h4><p>Place each NeuroStrip correctly into the Power Management Pod. The supplied quick-start material recommends charging for at least <strong>2 hours</strong> before a session.</p></div></div>
       <div class="step-card"><b>2</b><div><h4>Confirm the Pod is charging</h4><p>Check the charging-light indicators. The quick-start guide describes flashing lights while charging and a constant green indication when charged. Re-seat a NeuroStrip if it is not positioned correctly in the slot.</p></div></div>
       <div class="step-card"><b>3</b><div><h4>Connect power</h4><p>Connect the Power Management Pod to its USB-C charger / wall power as supplied.</p></div></div>
@@ -201,7 +201,7 @@ const content = {
 
   "ns-skinprep": {
     title:"NeuroStrip — Skin preparation",
-    body:`<img class="panel-guide-image" src="assets/ns-skin-preparation.jpg" alt="NeuroStrip skin preparation guide"><p>Good skin preparation improves electrode contact and helps produce clearer, more repeatable sEMG readings.</p>
+    body:`<img class="panel-guide-image" src="./assets/ns-skin-preparation.jpg" alt="NeuroStrip skin preparation guide"><p>Good skin preparation improves electrode contact and helps produce clearer, more repeatable sEMG readings.</p>
       <div class="step-stack">
         <div class="step-card"><b>1</b><div><h4>Locate the target muscle</h4><p>Identify the intended muscle and the direction of its fibres before preparing the skin.</p></div></div>
         <div class="step-card"><b>2</b><div><h4>Shave if required</h4><p>If hair will interfere with electrode contact or adhesion, shave the target area.</p></div></div>
@@ -209,12 +209,12 @@ const content = {
         <div class="step-card"><b>4</b><div><h4>Conductive solution</h4><p>Wipe or spray the conductive solution onto the skin as described in the supplied skin-preparation guide, then allow the area to <strong>dry completely</strong>.</p></div></div>
         <div class="step-card"><b>5</b><div><h4>Apply the patch</h4><p>Proceed to patch alignment and placement only after the prepared skin is dry.</p></div></div>
       </div>
-      <div class="resource-downloads"><a href="assets/neurostrip-skin-prep.pdf" target="_blank">Open the supplied Skin Preparation Guide ↗</a></div>`
+      <div class="resource-downloads"><a href="./assets/neurostrip-skin-prep.pdf" target="_blank">Open the supplied Skin Preparation Guide ↗</a></div>`
   },
 
   "ns-placement": {
     title:"NeuroStrip — EMG placement",
-    body:`<div class="panel-guide-image-grid"><img src="assets/ns-emg-placement-1.jpg" alt="NeuroStrip sEMG electrode placement guide"><img src="assets/ns-emg-placement-2.jpg" alt="NeuroStrip body muscle placement guide"></div><p>The selected target muscle should respond, at least minimally, to a command to contract and should return to a resting state in a timely manner. The muscle does not need to function at an optimal level for NeuroStrip to detect activity.</p>
+    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-emg-placement-1.jpg" alt="NeuroStrip sEMG electrode placement guide"><img src="./assets/ns-emg-placement-2.jpg" alt="NeuroStrip body muscle placement guide"></div><p>The selected target muscle should respond, at least minimally, to a command to contract and should return to a resting state in a timely manner. The muscle does not need to function at an optimal level for NeuroStrip to detect activity.</p>
       <h3 class="panel-section-title">General placement rules</h3>
       <ol>
         <li>Place NeuroStrip over the intended active muscle rather than over a tendon or joint.</li>
@@ -238,7 +238,7 @@ const content = {
 
   "ns-patch": {
     title:"NeuroStrip — Patch alignment",
-    body:`<img class="panel-guide-image" src="assets/ns-patch-alignment.jpg" alt="NeuroStrip patch alignment guide"><p>The NeuroStrip kit includes a Patch Alignment Tool to align the device with the electrode targets on the patch.</p>
+    body:`<img class="panel-guide-image" src="./assets/ns-patch-alignment.jpg" alt="NeuroStrip patch alignment guide"><p>The NeuroStrip kit includes a Patch Alignment Tool to align the device with the electrode targets on the patch.</p>
       <div class="step-stack">
         <div class="step-card"><b>1</b><div><h4>Remove the key-hole liner</h4><p>Remove the key-hole liner from the top of the NeuroStrip patch.</p></div></div>
         <div class="step-card"><b>2</b><div><h4>Place patch in the base</h4><p>Place the patch into the base of the Patch Alignment Tool.</p></div></div>
@@ -251,7 +251,7 @@ const content = {
 
   "ns-connect": {
     title:"NeuroStrip — Connections",
-    body:`<img class="panel-guide-image" src="assets/ns-guide-connections.png" alt="NeuroStrip Connections screen guide"><ol>
+    body:`<img class="panel-guide-image" src="./assets/ns-guide-connections.png" alt="NeuroStrip Connections screen guide"><ol>
         <li>Make sure the NeuroStrip is charged and awake.</li>
         <li>Open the NeuroStrip application and sign in.</li>
         <li>Open <strong>Connections</strong> from the main dashboard.</li>
@@ -266,7 +266,7 @@ const content = {
 
   "ns-patient": {
     title:"NeuroStrip — Patient Manager",
-    body:`<div class="panel-guide-image-grid"><img src="assets/ns-guide-dashboard.png" alt="NeuroStrip client and protocol dashboard"><img src="assets/ns-guide-new-patient.png" alt="NeuroStrip new patient setup"></div><p>The application dashboard is used to manage clients and protocols.</p>
+    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-guide-dashboard.png" alt="NeuroStrip client and protocol dashboard"><img src="./assets/ns-guide-new-patient.png" alt="NeuroStrip new patient setup"></div><p>The application dashboard is used to manage clients and protocols.</p>
       <h3 class="panel-section-title">Clients tab</h3>
       <ol>
         <li>Search or filter existing patient/client records.</li>
@@ -282,7 +282,7 @@ const content = {
 
   "ns-protocol": {
     title:"NeuroStrip — Create and edit protocols",
-    body:`<div class="panel-guide-image-grid"><img src="assets/ns-guide-create-protocol-1.png" alt="Create NeuroStrip protocol"><img src="assets/ns-guide-create-protocol-2.png" alt="NeuroStrip protocol visualization settings"></div><img class="panel-guide-image" src="assets/ns-guide-edit-protocol.png" alt="NeuroStrip protocol preview and editing"><ol>
+    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-guide-create-protocol-1.png" alt="Create NeuroStrip protocol"><img src="./assets/ns-guide-create-protocol-2.png" alt="NeuroStrip protocol visualization settings"></div><img class="panel-guide-image" src="./assets/ns-guide-edit-protocol.png" alt="NeuroStrip protocol preview and editing"><ol>
         <li>Open the <strong>Protocols</strong> tab.</li>
         <li>Select <strong>New Protocol</strong>, or open / clone an existing protocol where appropriate.</li>
         <li>Enter the protocol and activity details.</li>
@@ -297,7 +297,7 @@ const content = {
 
   "ns-session": {
     title:"NeuroStrip — Start a session",
-    body:`<div class="panel-guide-image-grid"><img src="assets/ns-guide-new-session.png" alt="NeuroStrip new session setup"><img src="assets/ns-guide-select-protocol.png" alt="Select a NeuroStrip protocol for a session"></div><div class="step-stack">
+    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-guide-new-session.png" alt="NeuroStrip new session setup"><img src="./assets/ns-guide-select-protocol.png" alt="Select a NeuroStrip protocol for a session"></div><div class="step-stack">
       <div class="step-card"><b>1</b><div><h4>Select the client</h4><p>Open the required client/patient and choose to start a new session.</p></div></div>
       <div class="step-card"><b>2</b><div><h4>Connect devices</h4><p>Confirm the NeuroStrips required for the session are connected.</p></div></div>
       <div class="step-card"><b>3</b><div><h4>Assign channels</h4><p>Assign each device to the intended channel and muscle placement. Leave unused channels Unassigned.</p></div></div>
@@ -309,7 +309,7 @@ const content = {
 
   "ns-graph": {
     title:"NeuroStrip — Session graph & controls",
-    body:`<div class="panel-guide-image-grid"><img src="assets/ns-guide-session-graph.png" alt="NeuroStrip session recording graph"><img src="assets/ns-guide-graph-controls.png" alt="NeuroStrip session graph controls"></div><p>The Session Recording screen displays live muscle activity and gives the operator control over the active session.</p>
+    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-guide-session-graph.png" alt="NeuroStrip session recording graph"><img src="./assets/ns-guide-graph-controls.png" alt="NeuroStrip session graph controls"></div><p>The Session Recording screen displays live muscle activity and gives the operator control over the active session.</p>
       <div class="feature-list">
         <div><strong>EMG Chart</strong><span>Live muscle activity for active channels.</span></div>
         <div><strong>Channel indicators</strong><span>Assigned channel, colour, muscle placement and current reading. Select indicators to show/hide individual EMG traces.</span></div>
@@ -325,7 +325,7 @@ const content = {
 
   "ns-export": {
     title:"NeuroStrip — Review, save & export",
-    body:`<div class="panel-guide-image-grid"><img src="assets/ns-guide-patient-sessions.png" alt="NeuroStrip saved sessions and export options"><img src="assets/ns-guide-measurements.png" alt="NeuroStrip measurements and trend graph"></div><ol>
+    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-guide-patient-sessions.png" alt="NeuroStrip saved sessions and export options"><img src="./assets/ns-guide-measurements.png" alt="NeuroStrip measurements and trend graph"></div><ol>
         <li>Open the relevant client/patient profile.</li>
         <li>Open the <strong>Sessions</strong> area and locate the required recorded session.</li>
         <li>Open the session to review the saved graph, notes and available session information.</li>
@@ -337,7 +337,7 @@ const content = {
 
   "ns-signal": {
     title:"NeuroStrip — Troubleshooting bad / erratic sEMG",
-    body:`<img class="panel-guide-image" src="assets/ns-guide-troubleshooting.png" alt="NeuroStrip troubleshooting page from User Guide"><div class="trouble-flow">
+    body:`<img class="panel-guide-image" src="./assets/ns-guide-troubleshooting.png" alt="NeuroStrip troubleshooting page from User Guide"><div class="trouble-flow">
       <div><b>01</b><strong>Skin</strong><span>Confirm the skin was prepared correctly and is completely dry.</span></div>
       <div><b>02</b><strong>Placement</strong><span>Confirm the device is over the intended muscle and aligned with muscle direction.</span></div>
       <div><b>03</b><strong>Patch contact</strong><span>Confirm the patch is fully adhered and the NeuroStrip-to-patch contacts are aligned.</span></div>
@@ -353,8 +353,8 @@ const content = {
   "ns-dysphagia": {
     title:"NeuroStrip — Dysphagia",
     body:`<div class="panel-guide-image-grid">
-        <img src="assets/ns-dysphagia-overview.png" alt="NeuroStrip dysphagia sEMG biofeedback overview">
-        <img src="assets/ns-dysphagia-use-cases.png" alt="NeuroStrip dysphagia use cases and specifications">
+        <img src="./assets/ns-dysphagia-overview.png" alt="NeuroStrip dysphagia sEMG biofeedback overview">
+        <img src="./assets/ns-dysphagia-use-cases.png" alt="NeuroStrip dysphagia use cases and specifications">
       </div>
       <p>The supplied Dysphagia 2-Pager describes sEMG biofeedback as real-time visual feedback of muscle activation that can help patients adjust swallowing activity while clinicians use objective data to guide therapy.</p>
 
@@ -385,13 +385,13 @@ const content = {
         <span><strong>Research & education</strong><small>Data collection, clinical education and training.</small></span>
       </div>
 
-      <div class="resource-downloads"><a href="assets/neurostrip-dysphagia.pdf" target="_blank">Open supplied Dysphagia 2-Pager ↗</a></div>
+      <div class="resource-downloads"><a href="./assets/neurostrip-dysphagia.pdf" target="_blank">Open supplied Dysphagia 2-Pager ↗</a></div>
       <div class="callout warning"><strong>Clinical scope:</strong> this section reflects the supplied Control Bionics material and is not a substitute for dysphagia assessment, treatment planning, clinical training or local governance.</div>`
   },
 
   "nn-connect": {
     title:"NeuroNode won't connect",
-    body:`<img class="panel-image" src="assets/neuronode-closeup.png" alt="NeuroNode wearable sensor">
+    body:`<img class="panel-image" src="./assets/neuronode-closeup.png" alt="NeuroNode wearable sensor">
       <p>Start with the standard Bluetooth reconnection workflow.</p>
       <ol>
         <li>Close the NeuroNode Controller App.</li>
@@ -452,7 +452,7 @@ const content = {
   },
   "placement": {
     title:"NeuroNode placement examples",
-    body:`<img class="panel-image" src="assets/neuronode-closeup.png" alt="NeuroNode">
+    body:`<img class="panel-image" src="./assets/neuronode-closeup.png" alt="NeuroNode">
       <p>Common documented placement examples include:</p>
       <ul>
         <li>Forehead flexion / eyebrow raise</li>
@@ -469,8 +469,8 @@ const content = {
   "mounts": {
     title:"Mounting options",
     body:`<div class="choice-grid">
-        <div><img class="panel-image" src="assets/table-stand.png" alt="Table stand"><strong>Table stand</strong></div>
-        <div><img class="panel-image" src="assets/floor-stand.png" alt="Floor stand"><strong>Floor stand</strong></div>
+        <div><img class="panel-image" src="./assets/table-stand.png" alt="Table stand"><strong>Table stand</strong></div>
+        <div><img class="panel-image" src="./assets/floor-stand.png" alt="Floor stand"><strong>Floor stand</strong></div>
       </div>
       <p>For compatible table, floor and wheelchair mounting systems, use the official Rehadapt resources.</p>
       <div class="mini-links"><a target="_blank" rel="noopener" href="https://rehadapt.com/">Rehadapt mounting ↗</a></div>`
@@ -617,8 +617,8 @@ let neroIdleIndex=0, neroBusy=false;
 function setNeroState(state){
   const img=document.getElementById("neroCompanionImg");
   if(!img)return;
-  if(state==="general"){img.src="assets/nero-transparent.png";img.classList.add("transparent-nero");}
-  else{img.src=`assets/nero-${state}.jpg`;img.classList.remove("transparent-nero");}
+  if(state==="general"){img.src="./assets/nero-transparent.png";img.classList.add("transparent-nero");}
+  else{img.src=`./assets/nero-${state}.jpg`;img.classList.remove("transparent-nero");}
 }
 setInterval(()=>{if(!neroBusy){setNeroState(neroIdleStates[neroIdleIndex%neroIdleStates.length]);neroIdleIndex++;}},4500);
 
@@ -665,3 +665,13 @@ document.getElementById("tourClose")?.addEventListener("click",closeTour);
 document.getElementById("startTourBtn")?.addEventListener("click",openTour);
 document.getElementById("meetNeuroBtn")?.addEventListener("click",openTour);
 try{if(!localStorage.getItem("neuroTourSeen"))setTimeout(openTour,700)}catch(e){}
+
+document.addEventListener("error", (event) => {
+  const img = event.target;
+  if (!(img instanceof HTMLImageElement) || img.dataset.fallbackApplied) return;
+  img.dataset.fallbackApplied = "1";
+  const wrap = document.createElement("div");
+  wrap.className = "image-load-error";
+  wrap.innerHTML = `<strong>Visual guide unavailable</strong><span>${img.alt || "This guide image could not be loaded."}</span>`;
+  img.replaceWith(wrap);
+}, true);

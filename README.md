@@ -67,3 +67,16 @@ Neuro V1 is intentionally deterministic. It is a front-line guide, not a generat
 - Split NeuroStrip navigation into Rehabilitation, Sports & Performance, and Dysphagia pathways
 - Added a dedicated Dysphagia section using the supplied Dysphagia 2-Pager visuals and content
 - Shared product-operation pages remain reusable across all three pathways
+
+
+## V2.1 — Verified Images
+This build repairs the image packaging issue.
+
+- Repacked the directly supplied Skin Preparation, Patch Alignment and EMG Placement images.
+- Repacked every User Guide visual used in the NeuroStrip help flows.
+- Added both Dysphagia brochure visuals that were missing from the prior ZIP.
+- Normalized all support images to standard PNG/JPEG formats.
+- Uses explicit `./assets/...` relative paths for GitHub Pages.
+- Includes `asset-manifest.json` for deployment verification.
+
+When updating GitHub Pages, upload the FULL contents of this ZIP, including the complete `assets` folder.

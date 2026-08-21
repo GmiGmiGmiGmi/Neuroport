@@ -124,3 +124,11 @@ footer{border-top:1px solid #e6ebf2;padding:30px 42px 46px;display:grid;grid-tem
 .ns-pathway strong{display:block;font-size:17px;color:#102b4e;margin-bottom:7px}
 .ns-pathway small{display:block;color:#617186;line-height:1.5;font-size:13px}
 @media(max-width:760px){.ns-pathway-grid{grid-template-columns:1fr}}
+
+.image-load-error{
+  min-height:120px;border:1px dashed #e0a5a5;background:#fff8f8;
+  color:#8b3030;border-radius:14px;padding:20px;display:flex;
+  flex-direction:column;justify-content:center;align-items:center;text-align:center;
+  margin:12px 0 20px
+}
+.image-load-error span{font-size:12px;margin-top:5px;color:#9b5a5a}
