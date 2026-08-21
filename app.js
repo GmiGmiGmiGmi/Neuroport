@@ -251,7 +251,7 @@ const content = {
 
   "ns-connect": {
     title:"NeuroStrip — Connections",
-    body:`<img class="panel-guide-image" src="./assets/ns-guide-connections.png" alt="NeuroStrip Connections screen guide"><ol>
+    body:`<div class="visual-guide-stack"><img src="./assets/ns-user-guide-page-16.png" alt="NeuroStrip Connections visual guide"></div><ol>
         <li>Make sure the NeuroStrip is charged and awake.</li>
         <li>Open the NeuroStrip application and sign in.</li>
         <li>Open <strong>Connections</strong> from the main dashboard.</li>
@@ -266,7 +266,7 @@ const content = {
 
   "ns-patient": {
     title:"NeuroStrip — Patient Manager",
-    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-guide-dashboard.png" alt="NeuroStrip client and protocol dashboard"><img src="./assets/ns-guide-new-patient.png" alt="NeuroStrip new patient setup"></div><p>The application dashboard is used to manage clients and protocols.</p>
+    body:`<div class="visual-guide-stack"><img src="./assets/ns-user-guide-page-10.png" alt="NeuroStrip dashboard"><img src="./assets/ns-user-guide-page-11.png" alt="New patient setup"><img src="./assets/ns-user-guide-page-12.png" alt="Patient overview"><img src="./assets/ns-user-guide-page-13.png" alt="Patient sessions"><img src="./assets/ns-user-guide-page-14.png" alt="Patient notes"><img src="./assets/ns-user-guide-page-15.png" alt="Patient measurements"></div><p>The application dashboard is used to manage clients and protocols.</p>
       <h3 class="panel-section-title">Clients tab</h3>
       <ol>
         <li>Search or filter existing patient/client records.</li>
@@ -282,7 +282,7 @@ const content = {
 
   "ns-protocol": {
     title:"NeuroStrip — Create and edit protocols",
-    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-guide-create-protocol-1.png" alt="Create NeuroStrip protocol"><img src="./assets/ns-guide-create-protocol-2.png" alt="NeuroStrip protocol visualization settings"></div><img class="panel-guide-image" src="./assets/ns-guide-edit-protocol.png" alt="NeuroStrip protocol preview and editing"><ol>
+    body:`<div class="visual-guide-stack"><img src="./assets/ns-user-guide-page-17.png" alt="Protocols screen"><img src="./assets/ns-user-guide-page-18.png" alt="Create new protocol activity details"><img src="./assets/ns-user-guide-page-19.png" alt="Protocol timeline and visualization"><img src="./assets/ns-user-guide-page-20.png" alt="Edit protocol preview"></div><ol>
         <li>Open the <strong>Protocols</strong> tab.</li>
         <li>Select <strong>New Protocol</strong>, or open / clone an existing protocol where appropriate.</li>
         <li>Enter the protocol and activity details.</li>
@@ -297,7 +297,7 @@ const content = {
 
   "ns-session": {
     title:"NeuroStrip — Start a session",
-    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-guide-new-session.png" alt="NeuroStrip new session setup"><img src="./assets/ns-guide-select-protocol.png" alt="Select a NeuroStrip protocol for a session"></div><div class="step-stack">
+    body:`<div class="visual-guide-stack"><img src="./assets/ns-user-guide-page-21.png" alt="Create new session"><img src="./assets/ns-user-guide-page-22.png" alt="Select protocol"></div><div class="step-stack">
       <div class="step-card"><b>1</b><div><h4>Select the client</h4><p>Open the required client/patient and choose to start a new session.</p></div></div>
       <div class="step-card"><b>2</b><div><h4>Connect devices</h4><p>Confirm the NeuroStrips required for the session are connected.</p></div></div>
       <div class="step-card"><b>3</b><div><h4>Assign channels</h4><p>Assign each device to the intended channel and muscle placement. Leave unused channels Unassigned.</p></div></div>
@@ -309,7 +309,7 @@ const content = {
 
   "ns-graph": {
     title:"NeuroStrip — Session graph & controls",
-    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-guide-session-graph.png" alt="NeuroStrip session recording graph"><img src="./assets/ns-guide-graph-controls.png" alt="NeuroStrip session graph controls"></div><p>The Session Recording screen displays live muscle activity and gives the operator control over the active session.</p>
+    body:`<div class="visual-guide-stack"><img src="./assets/ns-user-guide-page-23.png" alt="Session graph recording screen"><img src="./assets/ns-user-guide-page-24.png" alt="Session graph controls"></div><p>The Session Recording screen displays live muscle activity and gives the operator control over the active session.</p>
       <div class="feature-list">
         <div><strong>EMG Chart</strong><span>Live muscle activity for active channels.</span></div>
         <div><strong>Channel indicators</strong><span>Assigned channel, colour, muscle placement and current reading. Select indicators to show/hide individual EMG traces.</span></div>
@@ -325,7 +325,7 @@ const content = {
 
   "ns-export": {
     title:"NeuroStrip — Review, save & export",
-    body:`<div class="panel-guide-image-grid"><img src="./assets/ns-guide-patient-sessions.png" alt="NeuroStrip saved sessions and export options"><img src="./assets/ns-guide-measurements.png" alt="NeuroStrip measurements and trend graph"></div><ol>
+    body:`<div class="visual-guide-stack"><img src="./assets/ns-user-guide-page-13.png" alt="Saved sessions and export options"><img src="./assets/ns-user-guide-page-15.png" alt="Measurements and trend graph"></div><ol>
         <li>Open the relevant client/patient profile.</li>
         <li>Open the <strong>Sessions</strong> area and locate the required recorded session.</li>
         <li>Open the session to review the saved graph, notes and available session information.</li>
