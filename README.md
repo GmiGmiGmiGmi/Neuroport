@@ -39,3 +39,13 @@ This is a proof-of-concept support site. Review and approve all product guidance
 - Still fully static: no API, database or AI subscription required
 
 Neuro V1 is intentionally deterministic. It is a front-line guide, not a generative medical or clinical adviser.
+
+
+## V1.8 — NeuroStrip Focus
+- Rebuilt NeuroStrip Support Centre with detailed step-by-step flows
+- Added charging / quick start, skin prep, EMG placement, patch alignment, connections, Patient Manager, protocols, sessions, graph controls, exports, troubleshooting and dysphagia
+- Bundled the supplied NeuroStrip PDFs and videos as local reference resources
+- Moved the main human Support / Get Help banner to a centred layout
+- Replaced the old black-background mascot treatment with the supplied transparent Nero image
+- Added persistent floating Nero companion
+- Nero cycles through supplied expressions while idle, switches to Thinking while answering, then Excited/Proud when the answer appears

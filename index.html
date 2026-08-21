@@ -25,7 +25,7 @@
       <input id="searchInput" type="search" placeholder="Search for help…" autocomplete="off" />
       <button id="searchBtn" type="button" aria-label="Search">⌕</button>
     </label>
-    <button class="btn btn-neuro" id="askNeuroTop" type="button">✦ Ask Neuro</button>
+    <button class="btn btn-neuro" id="askNeuroTop" type="button">✦ Ask Nero</button>
     <a class="btn btn-primary" target="_blank" rel="noopener"
        href="https://bookings.cloud.microsoft/book/ControlBionics@controlbionics.com/?ismsaljsauthenabled=true">Book Support</a>
   </div>
@@ -45,14 +45,14 @@
     </div>
   </div>
   <div class="neuro-welcome-card">
-    <div class="neuro-mascot-view"><img src="assets/neuro-character-sheet.png" alt="Neuro, the Control Bionics support mascot"></div>
+    <div class="neuro-mascot-view"><img src="assets/nero-transparent.png" alt="Nero, the Control Bionics support mascot"></div>
     <div class="neuro-welcome-copy">
       <span class="eyebrow">MEET NEURO</span>
       <h2>Your friendly support guide</h2>
-      <p>Neuro helps first-time visitors find products, troubleshoot common issues and reach the right guide.</p>
+      <p>Nero helps first-time visitors find products, troubleshoot common issues and reach the right guide.</p>
       <div class="neuro-actions">
         <button class="btn btn-primary" id="startTourBtn" type="button">Show me around</button>
-        <button class="btn btn-secondary" id="askNeuroHero" type="button">Ask Neuro</button>
+        <button class="btn btn-secondary" id="askNeuroHero" type="button">Ask Nero</button>
       </div>
     </div>
   </div>
@@ -114,7 +114,7 @@
         <div class="product-body">
           <span class="tag">sEMG + MOVEMENT</span>
           <h3>NeuroStrip</h3>
-          <p>Connections, protocols, sessions, placement, graphs and troubleshooting.</p>
+          <p>Complete setup, charging, skin preparation, placement, patch alignment, app workflow, protocols, sessions, graphs, exports, troubleshooting and dysphagia resources.</p>
           <button class="text-link" data-open="neurostrip">Get help →</button>
         </div>
       </article>
@@ -183,19 +183,19 @@
   
 <section class="section neuro-assistant-section" id="ask-neuro">
   <div class="section-heading">
-    <div><span class="eyebrow">FRONTLINE GUIDE</span><h2>Ask Neuro</h2></div>
+    <div><span class="eyebrow">FRONTLINE GUIDE</span><h2>Ask Nero</h2></div>
     <p>V1 uses free, predefined support logic. Neuro routes common questions to approved guides without a paid AI API.</p>
   </div>
   <div class="neuro-assistant-layout">
     <div class="neuro-profile-card">
-      <div class="neuro-mascot-view small"><img src="assets/neuro-character-sheet.png" alt="Neuro mascot"></div>
-      <h3>Hi, I’m Neuro 👋</h3>
+      <div class="neuro-mascot-view small"><img src="assets/nero-transparent.png" alt="Nero mascot"></div>
+      <h3>Hi, I’m Nero 👋</h3>
       <p>I can help with NeuroNode, Grid 3, Eye-Gaze, NeuroStrip, UNO Touch, mounting and general support.</p>
-      <button class="text-link" id="meetNeuroBtn" type="button">Meet Neuro →</button>
+      <button class="text-link" id="meetNeuroBtn" type="button">Meet Nero →</button>
     </div>
     <div class="neuro-chat-card">
       <div id="neuroChat" class="neuro-chat-log" aria-live="polite">
-        <div class="neuro-msg assistant"><strong>Neuro:</strong> What can I help you with?</div>
+        <div class="neuro-msg assistant"><strong>Nero:</strong> What can I help you with?</div>
       </div>
       <div class="suggestion-row">
         <button type="button" class="neuro-suggest" data-neuro-q="My NeuroNode won't connect">NeuroNode won't connect</button>
@@ -204,15 +204,15 @@
         <button type="button" class="neuro-suggest" data-neuro-q="I need to book support">Book support</button>
       </div>
       <div class="neuro-input-row">
-        <input id="neuroInput" type="text" placeholder="Ask Neuro a question…">
+        <input id="neuroInput" type="text" placeholder="Ask Nero a question…">
         <button id="neuroSend" class="btn btn-primary" type="button">Send</button>
       </div>
-      <small class="assistant-note">Neuro V1 uses predefined support flows and may not understand every question. Unresolved issues should be escalated to Support.</small>
+      <small class="assistant-note">Nero V1 uses predefined support flows and may not understand every question. Unresolved issues should be escalated to Support.</small>
     </div>
   </div>
 </section>
 
-<section class="section support-banner">
+<section class="section support-banner support-banner-centered">
     <div>
       <span class="eyebrow">NEED MORE HELP?</span>
       <h2>Talk to our Support team</h2>
@@ -233,15 +233,19 @@
 </footer>
 
 
-<button id="floatingNeuro" class="floating-neuro" type="button" aria-label="Ask Neuro"><span>✦</span><strong>Ask Neuro</strong></button>
+<div id="neroCompanion" class="nero-companion" aria-hidden="true">
+  <img id="neroCompanionImg" src="assets/nero-transparent.png" alt="">
+  <div id="neroBubble" class="nero-bubble">Need a hand? Ask Nero.</div>
+</div>
+<button id="floatingNeuro" class="floating-neuro" type="button" aria-label="Ask Nero"><span>✦</span><strong>Ask Nero</strong></button>
 <div id="tour" class="tour" aria-hidden="true">
   <div class="tour-backdrop"></div>
   <section class="tour-card" role="dialog" aria-modal="true" aria-labelledby="tourTitle">
     <button class="modal-close" id="tourClose" type="button" aria-label="Close">×</button>
-    <div class="tour-visual neuro-mascot-view"><img src="assets/neuro-character-sheet.png" alt="Neuro mascot"></div>
+    <div class="tour-visual neuro-mascot-view"><img src="assets/nero-transparent.png" alt="Nero mascot"></div>
     <div class="tour-copy">
       <span class="eyebrow">WELCOME</span>
-      <h2 id="tourTitle">Hi! I’m Neuro 👋</h2>
+      <h2 id="tourTitle">Hi! I’m Nero 👋</h2>
       <p id="tourText">I’ll show you how to use the Control Bionics Support Hub.</p>
       <div class="tour-progress" id="tourProgress">1 of 4</div>
       <div class="tour-actions">
