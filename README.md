@@ -49,3 +49,21 @@ Neuro V1 is intentionally deterministic. It is a front-line guide, not a generat
 - Replaced the old black-background mascot treatment with the supplied transparent Nero image
 - Added persistent floating Nero companion
 - Nero cycles through supplied expressions while idle, switches to Thinking while answering, then Excited/Proud when the answer appears
+
+
+## V1.9 — Centred Help + Visual NeuroStrip Guides
+- All support/get-help popups are now centred instead of opening as a right-side drawer
+- Back button added to every help popup
+- Full product cards are clickable, not only the “Get help” text
+- Added supplied Skin Preparation image to the Skin Preparation guide
+- Added supplied Patch Alignment image to the Patch Alignment guide
+- Added both supplied sEMG placement images to the EMG Placement guide
+- Existing close button remains available
+
+
+## V2.0 — NeuroStrip Visual Hub
+- Added User Guide visuals to Connections, Patient Manager, Protocols, Sessions, Graph Controls, Review/Export and Troubleshooting
+- Kept the separately supplied Skin Preparation, Patch Alignment and EMG Placement visuals
+- Split NeuroStrip navigation into Rehabilitation, Sports & Performance, and Dysphagia pathways
+- Added a dedicated Dysphagia section using the supplied Dysphagia 2-Pager visuals and content
+- Shared product-operation pages remain reusable across all three pathways

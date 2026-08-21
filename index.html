@@ -69,7 +69,7 @@
     </div>
 
     <div class="product-grid">
-      <article class="product-card">
+      <article data-open-card="neuronode" tabindex="0" role="button" class="product-card">
         <div class="product-img-wrap"><img src="assets/neuronode-duo.png" alt="NeuroNode Duo" /></div>
         <div class="product-body">
           <span class="tag">AAC + EMG ACCESS</span>
@@ -79,7 +79,7 @@
         </div>
       </article>
 
-      <article class="product-card">
+      <article data-open-card="trilogy" tabindex="0" role="button" class="product-card">
         <div class="product-img-wrap"><img src="assets/neuronode-trilogy.png" alt="NeuroNode Trilogy" /></div>
         <div class="product-body">
           <span class="tag">AAC + EYE GAZE + EMG</span>
@@ -89,7 +89,7 @@
         </div>
       </article>
 
-      <article class="product-card">
+      <article data-open-card="eyegaze" tabindex="0" role="button" class="product-card">
         <div class="product-img-wrap"><img src="assets/eyegaze-duo.png" alt="EyeGaze Duo" /></div>
         <div class="product-body">
           <span class="tag">EYE-GAZE ACCESS</span>
@@ -99,7 +99,7 @@
         </div>
       </article>
 
-      <article class="product-card">
+      <article data-open-card="uno" tabindex="0" role="button" class="product-card">
         <div class="product-img-wrap"><img src="assets/uno-touch.png" alt="UNO Touch" /></div>
         <div class="product-body">
           <span class="tag">TOUCH AAC</span>
@@ -109,7 +109,7 @@
         </div>
       </article>
 
-      <article class="product-card">
+      <article data-open-card="neurostrip" tabindex="0" role="button" class="product-card">
         <div class="product-img-wrap contain"><img src="assets/neurostrip-sensor.jpg" alt="NeuroStrip sensor" /></div>
         <div class="product-body">
           <span class="tag">sEMG + MOVEMENT</span>
@@ -119,7 +119,7 @@
         </div>
       </article>
 
-      <article class="product-card general-card">
+      <article data-open-card="general" tabindex="0" role="button" class="product-card general-card">
         <div class="general-icon">💬</div>
         <div class="product-body">
           <span class="tag">GENERAL SUPPORT</span>
@@ -259,6 +259,7 @@
 <div id="modal" class="modal" aria-hidden="true">
   <div class="modal-backdrop" data-close></div>
   <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-back-btn" id="modalBackBtn" type="button" aria-label="Go back">← Back</button>
     <button class="modal-close" type="button" aria-label="Close" data-close>×</button>
     <div id="modalContent"></div>
   </section>
